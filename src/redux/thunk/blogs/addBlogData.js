@@ -2,7 +2,7 @@ import { addBlog } from '../../actions/blogActions';
 
 const addBlogData = (blogData) => {
   return async (dispatch, getState) => {
-    const res = await fetch(`https://blog-server-mrkpro360.vercel.app`, {
+    const res = await fetch(`https://blog-server-mrkpro360.vercel.app/blogs`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

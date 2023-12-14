@@ -3,7 +3,7 @@ import { updateBlog } from '../../actions/blogActions';
 const updateBlogData = (blogData) => {
   return async (dispatch, getState) => {
     const res = await fetch(
-      `https://blog-server-mrkpro360.vercel.app/${blogData._id}`,
+      `https://blog-server-mrkpro360.vercel.app/blogs/${blogData._id}`,
       {
         method: 'PATCH',
         headers: {
